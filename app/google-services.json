@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "574913129609",
+    "project_id": "projeto3bim-36b03",
+    "storage_bucket": "projeto3bim-36b03.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:574913129609:android:e5aebd852f7a9d763b6a58",
+        "android_client_info": {
+          "package_name": "com.example.projeto3bim"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlrugkoen0uEMaUDyTqmzQMYp4BfdIgj8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
