@@ -7,11 +7,11 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/button_link"
         android:layout_width="298dp"
         android:layout_height="91dp"
         android:gravity="center_horizontal"
-        android:text="Cadastro"
+        android:text="Login"
         android:textAlignment="center"
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -20,22 +20,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.095"
-        tools:ignore="HardcodedText" />
-
-    <EditText
-        android:id="@+id/nomeTextview"
-        android:layout_width="235dp"
-        android:layout_height="53dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:hint="Nome"
-        android:inputType="text"
-        android:textColorHint="#8D6E63"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.285"
         tools:ignore="HardcodedText" />
 
     <EditText
@@ -51,7 +35,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.395"
+        app:layout_constraintVertical_bias="0.286"
         tools:ignore="HardcodedText" />
 
     <EditText
@@ -67,30 +51,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.405"
         tools:ignore="HardcodedText" />
 
     <Button
-        android:id="@+id/enviarButton"
+        android:id="@+id/loginButton"
         android:layout_width="187dp"
         android:layout_height="61dp"
-        android:text="Registrar"
+        android:text="Login"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.601"
+        app:layout_constraintVertical_bias="0.519"
         tools:ignore="HardcodedText" />
-
-    <TextView
-        android:id="@+id/button_link"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Já tem uma conta?"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.685" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
