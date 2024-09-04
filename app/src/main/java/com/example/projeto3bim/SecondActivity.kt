@@ -1,5 +1,6 @@
 package com.example.projeto3bim
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -39,7 +40,8 @@ class SecondActivity : AppCompatActivity()
 
     }
 
-    fun login(email: String, password: String) {
+    private fun login(email: String, password: String) {
+        val intent = Intent(this, ThirdActivity::class.java)
         val auth = FirebaseAuth.getInstance()
         auth.signInWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
@@ -50,6 +52,7 @@ class SecondActivity : AppCompatActivity()
                         this, "Logado com sucesso: ${user?.email}",
                         Toast.LENGTH_SHORT
                     ).show()
+                    startActivity(intent)
                 } else {
                     // Falha no login
                     Toast.makeText(
