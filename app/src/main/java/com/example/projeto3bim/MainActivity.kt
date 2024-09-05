@@ -51,13 +51,15 @@ class MainActivity : AppCompatActivity() {
 
     private fun register(email: String, password: String)
     {
+        val intent = Intent(this, ThirdActivity::class.java)
         val auth = FirebaseAuth.getInstance()
         auth.createUserWithEmailAndPassword (email, password)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
-                // Registro bem-sucedido
-                val user = auth.currentUser
-                Toast.makeText(this, "Registrado com sucesso: ${user?.email}", Toast.LENGTH_SHORT).show()
+                    // Registro bem-sucedido
+                    val user = auth.currentUser
+                    Toast.makeText(this, "Registrado com sucesso: ${user?.email}", Toast.LENGTH_SHORT).show()
+                    startActivity(intent)
                 } else {
                     // Falha no registro
                     Toast.makeText(

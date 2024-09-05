@@ -21,6 +21,7 @@ class ThirdActivity : AppCompatActivity() {
     private lateinit var imageView: ImageView
     private var imageUri: Uri? = null
     private lateinit var storage: FirebaseStorage
+    private lateinit var sair: Button
 
     companion object
     {
@@ -36,6 +37,7 @@ class ThirdActivity : AppCompatActivity() {
         selecionarArquivo = findViewById(R.id.selecionarArquivo)
         enviarArquivo = findViewById(R.id.enviarArquivo)
         imageView = findViewById(R.id.imageView)
+        sair = findViewById(R.id.sair)
 
         selecionarArquivo.setOnClickListener{
             openFileChooser()
@@ -47,6 +49,10 @@ class ThirdActivity : AppCompatActivity() {
             } ?: run {
                 Toast.makeText(this, "no image selected", Toast.LENGTH_SHORT).show()
             }
+        }
+
+        sair.setOnClickListener{
+            finish()
         }
     }
 

@@ -52,6 +52,7 @@ class SecondActivity : AppCompatActivity()
                         this, "Logado com sucesso: ${user?.email}",
                         Toast.LENGTH_SHORT
                     ).show()
+                    finish()
                     startActivity(intent)
                 } else {
                     // Falha no login
@@ -64,4 +65,3 @@ class SecondActivity : AppCompatActivity()
     }
 
 }
-
