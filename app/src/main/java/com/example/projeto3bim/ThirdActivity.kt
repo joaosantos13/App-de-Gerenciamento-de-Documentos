@@ -22,6 +22,7 @@ class ThirdActivity : AppCompatActivity() {
     private var imageUri: Uri? = null
     private lateinit var storage: FirebaseStorage
     private lateinit var sair: Button
+    private lateinit var alterarDados: Button
 
     companion object
     {
@@ -38,6 +39,7 @@ class ThirdActivity : AppCompatActivity() {
         enviarArquivo = findViewById(R.id.enviarArquivo)
         imageView = findViewById(R.id.imageView)
         sair = findViewById(R.id.sair)
+        alterarDados = findViewById(R.id.alterarDados)
 
         selecionarArquivo.setOnClickListener{
             openFileChooser()
@@ -53,6 +55,11 @@ class ThirdActivity : AppCompatActivity() {
 
         sair.setOnClickListener{
             finish()
+        }
+
+        alterarDados.setOnClickListener{
+            val intent = Intent(this, FourthActivity::class.java)
+            startActivity(intent)
         }
     }
 
